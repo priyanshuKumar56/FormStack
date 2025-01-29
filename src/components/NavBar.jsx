@@ -46,7 +46,7 @@ const LandingPageHeader = () => {
         </IconButton>
         {/* Custom Logo */}
         <img
-          src="src\assets\forms_2020q4_48dp.png"
+          src="/assets/forms_2020q4_48dp.png"
           alt="Custom Logo"
           className="h-8"
         />{" "}
