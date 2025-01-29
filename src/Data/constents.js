@@ -1,0 +1,56 @@
+import {
+  Plus,
+  Image,
+  TextQuote,
+  Video,
+  DraftingCompass,
+  FileText,
+  RadioReceiverIcon as RadioButton,
+  CheckSquare,
+  List,
+  Calendar,
+  Clock,
+  Star,
+  Grid,
+  Phone,
+  Mail,
+  Hash,
+  Link2,
+  Upload,
+  RadioIcon,
+  DraftingCompassIcon,
+} from "lucide-react";
+
+export const SIDEBAR_TOOLS = {
+  ADD_QUESTION: { icon: Plus, label: "Add question" },
+  ADD_IMAGE: { icon: Image, label: "Add image" },
+  ADD_TEXT: { icon: TextQuote, label: "Add text" },
+  ADD_VIDEO: { icon: Video, label: "Add video" },
+  ADD_SECTION: { icon: DraftingCompass, label: "Add section" },
+  IMPORT_QUESTIONS: { icon: FileText, label: "Import questions" },
+};
+
+export const QUESTION_TYPES = {
+  MULTIPLE_CHOICE: {
+    id: "multiple_choice",
+    label: "Multiple Choice",
+    icon: RadioIcon,
+  },
+  CHECKBOXES: { id: "checkboxes", label: "Checkboxes", icon: CheckSquare },
+  SHORT_ANSWER: { id: "short_answer", label: "Short Answer", icon: TextQuote },
+  PARAGRAPH: { id: "paragraph", label: "Paragraph", icon: FileText },
+  DATE: { id: "date", label: "Date", icon: Calendar },
+  TIME: { id: "time", label: "Time", icon: Clock },
+  LINEAR_SCALE: {
+    id: "linear_scale",
+    label: "Linear Scale",
+    icon: DraftingCompassIcon,
+  },
+  RATING: { id: "rating", label: "Rating", icon: Star },
+  GRID: { id: "grid", label: "Grid", icon: Grid },
+  FILE_UPLOAD: { id: "file_upload", label: "File Upload", icon: Upload },
+  WEBSITE: { id: "website", label: "Website", icon: Link2 },
+  PHONE: { id: "phone", label: "Phone", icon: Phone },
+  EMAIL: { id: "email", label: "Email", icon: Mail },
+  NUMBER: { id: "number", label: "Number", icon: Hash },
+};
