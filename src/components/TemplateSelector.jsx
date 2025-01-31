@@ -5,7 +5,9 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import uuid from "react-uuid";
 import { useNavigate } from "react-router-dom";
 import { loadTemplate, resetForm } from "../Redux/Slices/formSlice";
-
+import BlankImage from '../assets/imges/forms-blank-googlecolors.png'
+import ContectImage from '../assets/imges/contectinfo.png'
+import FeedbackImage from '../assets/imges/eventfeedback.png'
 const TemplateSelector = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
@@ -20,7 +22,7 @@ const TemplateSelector = () => {
     {
       id: 1,
       title: "Blank Form",
-      imgSrc: "src/assets/imges/forms-blank-googlecolors.png",
+      imgSrc: BlankImage,
       description: "Create a custom form from scratch",
       onClick_func: createBlankForm,
       templateType: "new",
@@ -28,7 +30,7 @@ const TemplateSelector = () => {
     {
       id: 2,
       title: "Contact Information",
-      imgSrc: "src/assets/imges/contectinfo.png",
+      imgSrc: ContectImage,
       description: "Collect contact details From the User",
       onClick_func: () => {
         dispatch(loadTemplate("CONTACT"));
@@ -39,7 +41,7 @@ const TemplateSelector = () => {
     {
       id: 3,
       title: "Event Feedback",
-      imgSrc: "src/assets/imges/eventfeedback.png",
+      imgSrc: FeedbackImage,
       description: "Gather event and participant insights",
       onClick_func: () => {
         dispatch(loadTemplate("FEEDBACK"));
