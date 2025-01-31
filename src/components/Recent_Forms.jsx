@@ -20,7 +20,7 @@ const RecentForms = () => {
 
   // Modified selector to correctly access the forms data
   const recentForms = useSelector((state) => {
-    console.log("Accessing recentForms state:", state);
+    
 
     // Check if state exists and has the form property
     if (!state || !state.form) {
@@ -39,9 +39,7 @@ const RecentForms = () => {
   });
 
   // Debug: Log the retrieved forms
-  useEffect(() => {
-    console.log("Retrieved forms:", recentForms);
-  }, [recentForms]);
+
 
   const [sortOrder, setSortOrder] = useState("recent");
 
@@ -60,7 +58,7 @@ const RecentForms = () => {
   }
 
   const handleRemoveForm = (formId) => {
-    console.log("Removing form with ID:", formId);
+    
     dispatch(removeRecentForm(formId));
   };
 
