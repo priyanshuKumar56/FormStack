@@ -14,7 +14,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
 import CloseIcon from "@mui/icons-material/Close";
 import PersonIcon from "@mui/icons-material/Person";
-
+import myImage from '../assets/forms_2020q4_48dp.png'
 const LandingPageHeader = () => {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
   const [searchVisible, setSearchVisible] = useState(false);
@@ -46,7 +46,7 @@ const LandingPageHeader = () => {
         </IconButton>
         {/* Custom Logo */}
         <img
-          src="./assets/forms_2020q4_48dp.png"
+          src={myImage}
           alt="Custom Logo"
           className="h-8"
         />{" "}
